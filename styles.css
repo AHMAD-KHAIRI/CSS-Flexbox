@@ -60,3 +60,11 @@ p {
     flex-basis: 600px;
     /* flex-grow: 1; */
 }
+
+main {
+    width:80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
