@@ -33,6 +33,8 @@ h1, p {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
+    /* can either be row, row-reverse, colum or column-reverse */
+    flex-direction: row;
 }
 
 #container div {
