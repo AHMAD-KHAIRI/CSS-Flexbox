@@ -68,3 +68,24 @@ main {
     height: 500px;
     display: flex;
 }
+
+main .sidebar {
+    background-color: #6930c3;
+    /* first example: One value, unitless number: flex-grow
+    /* flex: 1; */
+    /* second example: Two values: flex-grow | flex-basis */
+    /* flex: 1 300px; */
+    /* third example: Three values: flex-grow | flex-shrink | flex-basis */
+    flex: 1 2 300px;
+    border: 2px solid whitesmoke;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    /* first example: One value, unitless number: flex-grow
+    /* flex: 1; */
+    /* second example: Two values: flex-grow | flex-basis */
+    /* flex: 1 300px; */
+    /* third example: Three values: flex-grow | flex-shrink | flex-basis */
+    flex: 2 1 800px;
+}
