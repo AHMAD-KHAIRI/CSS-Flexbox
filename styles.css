@@ -39,14 +39,18 @@ p {
     display: flex;
     /* can either be row, row-reverse, colum or column-reverse */
     flex-direction: row;
-    /* can be either flex-start, flex-end, center, space-around, space-between, space-evenly */
-    justify-content: space-evenly;
+    /* aligns on MAIN-AXIS: can be either flex-start, flex-end, center, space-around, space-between, space-evenly */
+    justify-content:center;
     /* can be either nowrap, wrap or wrap-reverse */
     flex-wrap: wrap;
+    /* aligns on CROSS-AXIS: can either be flex-start, flex-end, center, baseline */
+    align-items: center;
 }
 
 /* note that the div width and height changes when flex is enabled to accommodate size of the container */
 #container div {
     width: 200px;
     height: 200px;
+    font-size: 5em;
+    text-align: center;
 }
