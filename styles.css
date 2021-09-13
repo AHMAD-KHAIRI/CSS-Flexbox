@@ -37,6 +37,8 @@ h1, p {
     flex-direction: row;
     /* can be either flex-start, flex-end, center, space-around, space-between, space-evenly */
     justify-content: space-evenly;
+    /* can be either nowrap, wrap or wrap-reverse */
+    flex-wrap: wrap;
 }
 
 /* note that the div width and height changes when flex is enabled to accommodate size of the container */
