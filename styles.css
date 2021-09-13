@@ -12,6 +12,8 @@ p {
 }
 #container div:nth-of-type(1) {
     background-color: #80ffdb;
+    flex-grow: 1;
+    flex-shrink: 2;
 }
 
 #container div:nth-of-type(2) {
@@ -28,31 +30,33 @@ p {
 
 #container div:nth-of-type(5) {
     background-color: #6930c3;
+    flex-grow: 2;
+    flex-shrink: 0;
 }
 
 #container {
     background-color: #003049;
     width: 90%;
-    height: 500px;
+    /* height: 500px; */
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
     /* can either be row, row-reverse, colum or column-reverse */
-    flex-direction: column;
+    flex-direction: row;
     /* aligns on MAIN-AXIS: can be either flex-start, flex-end, center, space-around, space-between, space-evenly */
     justify-content:center;
     /* can be either nowrap, wrap or wrap-reverse */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* aligns on CROSS-AXIS: can either be flex-start, flex-end, center, baseline */
-    align-items: center;
-    align-content: center;
-    /* align-items: flex-start; */
+    /* align-items: center;
+    align-content: center; */
 }
 
 /* note that the div width and height changes when flex is enabled to accommodate size of the container */
 #container div {
     width: 200px;
     height: 200px;
-    font-size: 5em;
     text-align: center;
+    flex-basis: 600px;
+    /* flex-grow: 1; */
 }
