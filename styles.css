@@ -34,9 +34,10 @@ h1, p {
     border: 5px solid #003049;
     display: flex;
     /* can either be row, row-reverse, colum or column-reverse */
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 
+/* note that the div width and height changes when flex is enabled to accommodate size of the container */
 #container div {
     width: 200px;
     height: 200px;
